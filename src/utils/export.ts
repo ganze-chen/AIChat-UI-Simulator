@@ -6,7 +6,7 @@ export interface ExportOptions {
   fileName: string
 }
 
-const INPUT_BAR_SELECTOR = '[data-deepseek-input-bar]'
+const INPUT_BAR_SELECTOR = '[data-deepseek-input-bar],[data-doubao-input-bar]'
 
 export async function exportPreviewAsPng(node: HTMLElement, opts: ExportOptions) {
   const originalTransform = node.style.transform

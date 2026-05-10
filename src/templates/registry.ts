@@ -1,19 +1,11 @@
 import type { PlatformId } from '@/types'
 import type { Template } from './types'
 import { deepseekTemplate } from './deepseek'
+import { doubaoTemplate } from './doubao'
 
 const registry: Record<PlatformId, Template<any>> = {
   deepseek: deepseekTemplate as Template<any>,
-  doubao: {
-    id: 'doubao',
-    name: '豆包',
-    status: 'soon',
-    icon: null,
-    defaultState: () => ({}),
-    Renderer: () => null,
-    Editor: () => null,
-    exportWidth: 390,
-  },
+  doubao: doubaoTemplate as Template<any>,
   qwen: {
     id: 'qwen',
     name: '通义千问',
