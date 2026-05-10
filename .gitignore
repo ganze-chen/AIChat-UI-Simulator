@@ -1,0 +1,19 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.log
+
+# Claude Code local config
+.claude/
+
+# Reference screenshots (third-party app captures, kept locally only)
+deepseek1.jpeg
+deepseek2.jpeg
+deepseek_thinking.jpeg
+doubao1.jpeg
+doubao2.jpeg
+ui-reference.jpeg
