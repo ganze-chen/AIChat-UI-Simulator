@@ -10,7 +10,7 @@ import {
 
 const ICON_MAP: Record<DoubaoToolbarPill['iconKey'], (() => ReactNode) | null> = {
   fast: () => (
-    <span style={{ color: '#3F70FF', display: 'inline-flex' }}>
+    <span style={{ color: '#1A1A1A', display: 'inline-flex' }}>
       <FastBoltIcon />
     </span>
   ),
@@ -20,17 +20,17 @@ const ICON_MAP: Record<DoubaoToolbarPill['iconKey'], (() => ReactNode) | null> =
     </span>
   ),
   sparkle: () => (
-    <span style={{ color: '#3F70FF', display: 'inline-flex' }}>
+    <span style={{ color: '#1A1A1A', display: 'inline-flex' }}>
       <SparkleIcon />
     </span>
   ),
   palette: () => (
-    <span style={{ color: '#3F70FF', display: 'inline-flex' }}>
+    <span style={{ color: '#1A1A1A', display: 'inline-flex' }}>
       <PaletteImageIcon />
     </span>
   ),
   image: () => (
-    <span style={{ color: '#3F70FF', display: 'inline-flex' }}>
+    <span style={{ color: '#1A1A1A', display: 'inline-flex' }}>
       <PaletteImageIcon />
     </span>
   ),

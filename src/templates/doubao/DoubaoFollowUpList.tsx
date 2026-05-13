@@ -9,6 +9,7 @@ export function DoubaoFollowUpList({ items }: Props) {
       style={{
         display: 'flex',
         flexDirection: 'column',
+        alignItems: 'flex-start',
         gap: 8,
         padding: '6px 16px 12px',
       }}
@@ -20,10 +21,12 @@ export function DoubaoFollowUpList({ items }: Props) {
             background: '#fff',
             border: '1px solid #E5E7EB',
             borderRadius: 12,
-            padding: '12px 16px',
+            padding: '8px 14px',
             fontSize: 14,
             lineHeight: 1.5,
             color: '#1A1A1A',
+            maxWidth: '100%',
+            wordBreak: 'break-word',
           }}
         >
           {q}

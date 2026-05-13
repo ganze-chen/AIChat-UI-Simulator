@@ -16,11 +16,11 @@ export function DoubaoInputBar({ placeholder }: Props) {
       <div
         style={{
           background: '#fff',
-          borderRadius: 22,
-          padding: '8px 12px 8px 14px',
+          borderRadius: 20,
+          padding: '14px 14px 14px 18px',
           display: 'flex',
           alignItems: 'center',
-          gap: 10,
+          gap: 12,
           boxShadow: '0 6px 16px rgba(15, 23, 42, 0.08)',
         }}
       >

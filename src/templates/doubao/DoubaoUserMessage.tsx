@@ -13,7 +13,7 @@ export function DoubaoUserMessage({ content }: Props) {
     >
       <div
         style={{
-          maxWidth: '78%',
+          maxWidth: '88%',
           background: '#025AE1',
           borderRadius: 18,
           padding: '11px 16px',

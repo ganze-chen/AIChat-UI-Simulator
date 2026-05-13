@@ -4,7 +4,7 @@ type P = SVGProps<SVGSVGElement>
 
 export const HamburgerIcon = (p: P) => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" {...p}>
-    <path d="M4 9 H20 M4 15 H14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    <path d="M5 10 H19 M5 15 H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 )
 
@@ -29,7 +29,7 @@ export const PhoneIcon = (p: P) => (
 export const SpeakerLoudIcon = (p: P) => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" {...p}>
     <path
-      d="M4 9 H7.5 L12 5.5 L12 18.5 L7.5 15 H4 Z"
+      d="M4.8 9.2 Q4 9.2 4 10 V14 Q4 14.8 4.8 14.8 H7.2 L11.4 18.2 Q12 18.7 12 17.9 V6.1 Q12 5.3 11.4 5.8 L7.2 9.2 Z"
       fill="currentColor"
     />
     <path
@@ -123,8 +123,32 @@ export const ShareIcon = (p: P) => (
 
 export const RefreshIcon = (p: P) => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" {...p}>
+    {/* top arrow: arc sweeping clockwise from left to upper-right, arrowhead pointing into circle */}
     <path
-      d="M20 12 A8 8 0 1 1 17.5 6.5 M20 4 V8 H16"
+      d="M4.5 13 A 7.5 7.5 0 0 1 18 7.5"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      fill="none"
+    />
+    <path
+      d="M18 3.5 V7.5 H14"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    />
+    {/* bottom arrow: arc sweeping clockwise from right to lower-left, arrowhead pointing into circle */}
+    <path
+      d="M19.5 11 A 7.5 7.5 0 0 1 6 16.5"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      fill="none"
+    />
+    <path
+      d="M6 20.5 V16.5 H10"
       stroke="currentColor"
       strokeWidth="1.7"
       strokeLinecap="round"
@@ -138,7 +162,14 @@ export const RefreshIcon = (p: P) => (
 
 export const FastBoltIcon = (p: P) => (
   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" {...p}>
-    <path d="M9 1.5 L3 9 H7.5 L6.5 14.5 L13 7 H8.5 L9 1.5 Z" fill="currentColor" />
+    <path
+      d="M9 1.5 L3 9 H7.5 L6.5 14.5 L13 7 H8.5 L9 1.5 Z"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinejoin="round"
+      strokeLinecap="round"
+      fill="none"
+    />
   </svg>
 )
 
@@ -153,7 +184,10 @@ export const SparkleIcon = (p: P) => (
   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" {...p}>
     <path
       d="M8 1.5 L9.5 6 L14 7.5 L9.5 9 L8 13.5 L6.5 9 L2 7.5 L6.5 6 Z"
-      fill="currentColor"
+      stroke="currentColor"
+      strokeWidth="1.3"
+      strokeLinejoin="round"
+      fill="none"
     />
   </svg>
 )
@@ -183,8 +217,22 @@ export const CameraIcon = (p: P) => (
 
 export const InputMicIcon = (p: P) => (
   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" {...p}>
-    <rect x="9" y="3" width="6" height="11" rx="3" stroke="currentColor" strokeWidth="1.7" fill="none" />
-    <path d="M5.5 12 C5.5 15.6 8.4 17.6 12 17.6 C15.6 17.6 18.5 15.6 18.5 12 M12 17.6 V21" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" fill="none" />
+    <circle cx="12" cy="12" r="9.3" stroke="currentColor" strokeWidth="1.7" fill="none" />
+    <circle cx="8.4" cy="12" r="1" fill="currentColor" />
+    <path
+      d="M11.6 9.5 Q14 12 11.6 14.5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      fill="none"
+    />
+    <path
+      d="M14.2 7.6 Q17.7 12 14.2 16.4"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      fill="none"
+    />
   </svg>
 )
 
